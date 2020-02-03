@@ -6,11 +6,12 @@
 
 ### Links and Resources
 
-- [submission PR]()
-- [ci/cd]() (GitHub Actions)
+- [submission PR](https://github.com/401-advanced-javascript-AhmadK/authentication/pull/1)
+- [ci/cd](https://github.com/401-advanced-javascript-AhmadK/authentication/actions) (GitHub Actions)
 
 #### `.env` requirements
 - `PORT` - 3000
+- `MONGODB_URI` - mongodb://localhost:27017/lab11db 
 
 #### How to initialize/run your application (where applicable)
 
@@ -25,4 +26,4 @@
 
 #### UML
 
-![api-server](assets/api-server.jpg)
+![basic-auth](assets/basic-auth.jpg)
