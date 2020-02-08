@@ -12,6 +12,7 @@
 #### `.env` requirements
 - `PORT` - 3000
 - `MONGODB_URI` - mongodb://localhost:27017/lab11db 
+- `SECRET` - 'ahmadShakespeare'
 
 #### How to initialize/run your application (where applicable)
 
@@ -23,6 +24,14 @@
   npm run test
 - Any tests of note?
   supertest
+  - Any tests passed? 
+   No
+
+#### Worked as a group
+  Ahmad K. Al-Mahasneh
+  Qusai A. Al-Hanaktah
+  Mohammad S. Al-Hawamdeh
+  Ayman J. Al-Khawaldeh
 
 #### UML
 

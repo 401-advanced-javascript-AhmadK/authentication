@@ -18,12 +18,4 @@ describe('Authentication Model',()=>{
         expect(data.text).toEqual(base64.encode(test.password));
       });
   });
-
-  // it('POST to /signin to get the user', ()=>{
-
-  // });
-
-  // it('GET to /users to get all users', ()=>{
-
-  // });
 });

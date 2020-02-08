@@ -2,24 +2,32 @@
 'use strict';
 
 const base64 = require('base-64');
-const users = require('./users.js');
+const Users = require('./users.js');
 
 module.exports = (req, res, next) => {
 
-  if(!req.headers.authorization) { next('invalid login'); return; }
+  let [authType, encodedString] = req.headers.authorization.split(/\s+/);
 
-  let basic = req.headers.authorization.split(' ').pop();
-  console.log('req auth headers:', req.headers.authorization);
-  console.log('basic:', basic);
+  switch(authType.toLowerCase()) {
+  case 'basic':
+    return authBasic(encodedString);
+  default:
+    break;
+  }
 
-  let [user, pass] = base64.decode(basic).split(':');
+  function authBasic(authString) {
 
-  console.log('decoded user/pw', [user, pass]);
-
-  users.authenticateBasic(user, pass)
-    .then(validUser => {
-      req.token = users.generateToken(validUser);
-      console.log('token:', req.token);
-      next();
-    }).catch( err => next('invalid login'));
+    let base64Buffer = Buffer.from(authString,'base64');
+    let bufferString = base64Buffer.toString();
+    let [username,password] = bufferString.split(':');
+    let auth = {username,password};
+    
+    return Users.authenticateBasic(auth)
+      .then( user =>{
+        console.log(user);
+        req.user = user;
+        req.token = user.generateToken(user);
+        next();
+      });
+  }
 };
