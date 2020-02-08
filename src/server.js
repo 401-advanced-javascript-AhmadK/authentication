@@ -17,6 +17,7 @@ const app = express();
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
+app.use(express.static('./public'));
 app.use(authRouter);
 app.use(notFound);
 app.use(errorHandler);

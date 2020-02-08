@@ -1,18 +1,23 @@
-# LAB - Class 11
+# LAB - Class 12
 
-## Authentication
+## OAuth
 
 ### Author: Ahmad K. Al-Mahasneh
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-AhmadK/authentication/pull/1)
+- [submission PR](https://github.com/401-advanced-javascript-AhmadK/authentication/pull/2)
 - [ci/cd](https://github.com/401-advanced-javascript-AhmadK/authentication/actions) (GitHub Actions)
 
 #### `.env` requirements
 - `PORT` - 3000
 - `MONGODB_URI` - mongodb://localhost:27017/lab11db 
 - `SECRET` - 'ahmadShakespeare'
+- `CLIENT_ID` - 422f8f92016cf9c60a6c
+- `CLIENT_SECRET` - b6c360553bd375ce64f6703000f52b4aac98b7e9
+- `API_SERVER` - http://localhost:3000/oauth
+
+
 
 #### How to initialize/run your application (where applicable)
 
@@ -28,10 +33,10 @@
    No
 
 #### Worked as a group
-  Ahmad K. Al-Mahasneh
-  Qusai A. Al-Hanaktah
-  Mohammad S. Al-Hawamdeh
-  Ayman J. Al-Khawaldeh
+  - Ahmad K. Al-Mahasneh
+  - Qusai A. Al-Hanaktah
+  - Mohammad S. Al-Hawamdeh
+  - Ayman J. Al-Khawaldeh
 
 #### UML
 

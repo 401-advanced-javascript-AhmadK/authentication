@@ -4,6 +4,7 @@ const express = require('express');
 const authRouter = express.Router();
 const Users = require('./users.js');
 const basicAuth = require('./basic-auth-middleware.js');
+const oauth = require('./oauth-middleware.js');
 
 authRouter.post('/signup', (req, res,next) => {
   let user = new Users(req.body);
@@ -23,6 +24,10 @@ authRouter.get('/users',(req, res) => {
     .then(data=>{
       res.status(200).json(data);
     });
+});
+
+authRouter.get('/oauth', oauth, (req, res) => {
+  res.status(200).send(req.token);
 });
 
 module.exports = authRouter;
