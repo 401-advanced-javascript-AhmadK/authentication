@@ -35,4 +35,19 @@ users.statics.list =  async function(){
   return results;
 };
 
+
+users.statics.authenticateToken = async function(token){
+  try {
+    let tokenObject = jwt.verify(token, process.env.SECRET);
+
+    if (tokenObject.username) {
+      return Promise.resolve(tokenObject);
+    } else {
+      return Promise.reject();
+    }
+  } catch (err) {
+    return Promise.reject();
+  }
+};
+
 module.exports = mongoose.model('users',users);

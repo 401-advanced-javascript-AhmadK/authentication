@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-AhmadK/authentication/pull/2)
+- [submission PR](https://github.com/401-advanced-javascript-AhmadK/authentication/pull/3)
 - [ci/cd](https://github.com/401-advanced-javascript-AhmadK/authentication/actions) (GitHub Actions)
 
 #### `.env` requirements
@@ -14,7 +14,6 @@
 - `MONGODB_URI` - mongodb://localhost:27017/lab11db 
 - `SECRET` - 'ahmadShakespeare'
 - `CLIENT_ID` - 422f8f92016cf9c60a6c
-- `CLIENT_SECRET` - b6c360553bd375ce64f6703000f52b4aac98b7e9
 - `API_SERVER` - http://localhost:3000/oauth
 
 
