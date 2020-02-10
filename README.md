@@ -1,19 +1,19 @@
-# LAB - Class 13
+# LAB - Class 14
 
-## Bearer Authorization 
+## Access Control List 
 
 ### Author: Ahmad K. Al-Mahasneh
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-AhmadK/authentication/pull/3)
+- [submission PR](https://github.com/401-advanced-javascript-AhmadK/authentication/pull/4)
 - [ci/cd](https://github.com/401-advanced-javascript-AhmadK/authentication/actions) (GitHub Actions)
 
 #### `.env` requirements
 - `PORT` - 3000
 - `MONGODB_URI` - mongodb://localhost:27017/lab11db 
 - `SECRET` - 'ahmadShakespeare'
-- `CLIENT_ID` - 422f8f92016cf9c60a6c
+- `CLIENT_ID` - 422f8f92016cf9c60a6c  
 - `API_SERVER` - http://localhost:3000/oauth
 
 
@@ -39,4 +39,4 @@
 
 #### UML
 
-![basic-auth](assets/basic-auth.jpg)
+![access-control-list](assets/acl.jpg)
