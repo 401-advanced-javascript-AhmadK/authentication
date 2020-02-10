@@ -39,4 +39,4 @@
 
 #### UML
 
-![basic-auth](assets/basic-auth.jpg)
+![bearer-auth](assets/bearer-auth.jpg)
