@@ -18,7 +18,7 @@ authRouter.post('/signup', (req, res,next) => {
     }).catch(next);
 });
 
-authRouter.post('/signin', basicAuth, (req, res) => {
+authRouter.post('/signin', basicAuth, bearerAuth, (req, res) => {
   res.status(200).send(req.token);
 });
 
